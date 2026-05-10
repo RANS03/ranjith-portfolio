@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjith K | Biomedical Engineer</title>
+    <meta name="description" content="Portfolio of Ranjith K, Biomedical Engineer, Healthcare Technology Innovator.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-pulse"></div>
+            <h2 class="loader-text">INITIALIZING <span class="accent-text">SYSTEM</span></h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">RK<span class="accent-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+            <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+            <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+            <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+            <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="hero-content">
+                <div class="hero-badge reveal-up delay-1">
+                    <span class="glow-pulse"></span>
+                    AIR 50 – GATE BM’26
+                </div>
+                <h1 class="hero-title reveal-up delay-2">
+                    <span class="text-gradient">Ranjith K</span>
+                </h1>
+                <h2 class="hero-subtitle reveal-up delay-3">
+                    Biomedical Engineer <span class="divider">|</span> Azure Certified <span class="divider">|</span> Healthcare Tech
+                </h2>
+                <p class="hero-tagline reveal-up delay-4">
+                    “Engineering Intelligent Healthcare Systems for the Future”
+                </p>
+                <div class="hero-stats reveal-up delay-5">
+                    <div class="stat-item"><span class="stat-value">AIR 50</span><span class="stat-label">GATE BM'26</span></div>
+                    <div class="stat-item"><span class="stat-value">Certified</span><span class="stat-label">Microsoft Azure</span></div>
+                </div>
+                <div class="hero-cta reveal-up delay-6">
+                    <a href="#projects" class="btn btn-primary magnetic"><span class="btn-text">Explore Projects</span></a>
+                    <a href="#contact" class="btn btn-secondary magnetic"><span class="btn-text">Contact Me</span></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll to explore</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass-card reveal-up delay-1">
+                    <p>I am a Biomedical Engineer passionate about healthcare innovation, data-driven problem solving, medical technologies, IoT systems, cloud computing, and healthcare analytics. My academic and professional journey combines biomedical engineering, research, data analysis, and emerging technologies to build impactful healthcare solutions.</p>
+                    <p>As an AIR 50 in GATE Biomedical Engineering, I have consistently demonstrated strong analytical and technical excellence. My experience spans medical equipment systems, IoT-based healthcare management, cloud technologies, and healthcare data analytics.</p>
+                </div>
+                <div class="about-interests reveal-up delay-2">
+                    <h3 class="subsection-title">Core Interests</h3>
+                    <div class="interests-tags">
+                        <span class="tag magnetic-sm">Medical Devices</span>
+                        <span class="tag magnetic-sm">Healthcare Analytics</span>
+                        <span class="tag magnetic-sm">Biomedical Signal Processing</span>
+                        <span class="tag magnetic-sm">AI in Healthcare</span>
+                        <span class="tag magnetic-sm">IoT Healthcare Systems</span>
+                        <span class="tag magnetic-sm">Cloud Computing</span>
+                        <span class="tag magnetic-sm">Data Engineering</span>
+                        <span class="tag magnetic-sm">Financial Tech in Healthcare</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Key <span class="text-gradient">Achievements</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card tilt-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">🏆</div>
+                    <h3>AIR 50</h3>
+                    <p>GATE BM’26</p>
+                </div>
+                <div class="achievement-card glass-card tilt-card reveal-up delay-1">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">⭐</div>
+                    <h3>Department Topper</h3>
+                    <p>Academic Excellence</p>
+                </div>
+                <div class="achievement-card glass-card tilt-card reveal-up delay-2">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">☁️</div>
+                    <h3>Azure Fundamentals</h3>
+                    <p>Microsoft Certified</p>
+                </div>
+                <div class="achievement-card glass-card tilt-card reveal-up delay-3">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">📄</div>
+                    <h3>Published Researcher</h3>
+                    <p>International Level</p>
+                </div>
+                <div class="achievement-card glass-card tilt-card reveal-up delay-4">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">🎓</div>
+                    <h3>Graduate</h3>
+                    <p>Biomedical Engineering</p>
+                </div>
+                <div class="achievement-card glass-card tilt-card reveal-up delay-5">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">💡</div>
+                    <h3>Innovator</h3>
+                    <p>Healthcare Technology</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+                
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">May 2025 – Present</span>
+                        <h3>Application and Sales Engineer</h3>
+                        <h4 class="company">Greenwell Specialty Healthcare Pvt Ltd, Bengaluru</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Feb 2025 – Mar 2025</span>
+                        <h3>Internship Trainee</h3>
+                        <h4 class="company">Leeway Biomedical, Bengaluru</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Dec 2024 – Jan 2025</span>
+                        <h3>Data Analyst Intern</h3>
+                        <h4 class="company">NoviTech R&D Pvt Ltd</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Dec 2023 – Jan 2024</span>
+                        <h3>Medical Equipment Intern</h3>
+                        <h4 class="company">MedCuore Medical Solutions, Chennai</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Jun 2023 – Jul 2023</span>
+                        <h3>Internship Trainee</h3>
+                        <h4 class="company">Stanley Medical College & Hospital, Chennai</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Jan 2022</span>
+                        <h3>IoT Intern</h3>
+                        <h4 class="company">NSIC Technical Services Centre</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card tilt-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="project-visual">
+                        <div class="visual-overlay"></div>
+                        <div class="visual-placeholder">MediTrack Dashboard Preview</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MediTrack</h3>
+                        <p class="project-subtitle">Enhancing Efficiency and Security in Hospitals with IoT Equipment Management</p>
+                        <p class="project-desc">An IoT-based hospital equipment management system designed to improve healthcare operational efficiency, tracking, and security.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Biomedical Systems</span>
+                            <span class="tech-tag">Data Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card tilt-card reveal-up delay-1">
+                    <div class="card-glow"></div>
+                    <div class="project-visual">
+                        <div class="visual-overlay"></div>
+                        <div class="visual-placeholder">Gesture Recognition UI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gesture Recognition Technologies</h3>
+                        <p class="project-subtitle">For Speech and Hearing Impaired</p>
+                        <p class="project-desc">A systematic review focused on assistive technologies and gesture recognition systems designed for non-verbal communication.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Biomedical Eng</span>
+                            <span class="tech-tag">AI Concepts</span>
+                            <span class="tech-tag">Signal Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Technical <span class="text-gradient">Arsenal</span></h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category reveal-up">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Biomedical Engineering</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Medical Devices</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Healthcare Analytics</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python & SQL</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Microsoft Azure / Cloud</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>IoT Systems</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-category reveal-up delay-1">
+                        <h3 class="category-title">Analytical Skills</h3>
+                        <div class="tags-container">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Research</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Strategic Thinking</span>
+                            <span class="skill-tag">Financial Acumen</span>
+                        </div>
+                    </div>
+                    <div class="skills-category reveal-up delay-2">
+                        <h3 class="category-title">Soft Skills</h3>
+                        <div class="tags-container">
+                            <span class="skill-tag">Collaboration</span>
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Innovation</span>
+                            <span class="skill-tag">Adaptability</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section-padding">
+             <div class="section-header reveal-up">
+                <h2 class="section-title">Global <span class="text-gradient">Certifications</span></h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card glass-card reveal-up">
+                    <div class="cert-icon azure">☁️</div>
+                    <div class="cert-details">
+                        <h3>Azure Fundamentals</h3>
+                        <p>Microsoft Certified</p>
+                    </div>
+                </div>
+                <div class="cert-card glass-card reveal-up delay-1">
+                    <div class="cert-icon">📐</div>
+                    <div class="cert-details">
+                        <h3>Fusion 360</h3>
+                        <p>Autodesk</p>
+                    </div>
+                </div>
+                <div class="cert-card glass-card reveal-up delay-2">
+                    <div class="cert-icon data">📊</div>
+                    <div class="cert-details">
+                        <h3>Python Data Analysis</h3>
+                        <p>Specialization</p>
+                    </div>
+                </div>
+                <div class="cert-card glass-card reveal-up delay-3">
+                    <div class="cert-icon bio">🧬</div>
+                    <div class="cert-details">
+                        <h3>Biomaterials</h3>
+                        <p>Advanced Course</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="research-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Research & <span class="text-gradient">Publications</span></h2>
+            </div>
+            <div class="lab-dashboard glass-card reveal-up">
+                <div class="dashboard-grid">
+                    <div class="research-item">
+                        <div class="research-pulse"></div>
+                        <div class="research-content">
+                            <span class="research-type">Systematic Review</span>
+                            <h3>Gesture Recognition Technologies for the Speech and Hearing Impaired</h3>
+                            <p class="research-metrics">Status: Published <span class="dot">·</span> Impact: High</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-pulse secondary"></div>
+                        <div class="research-content">
+                            <span class="research-type">Applied Research</span>
+                            <h3>MediTrack: Enhancing Efficiency and Security in Hospitals with IoT</h3>
+                            <p class="research-metrics">Status: Completed <span class="dot">·</span> Domain: IoT/Healthcare</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Initiate <span class="text-gradient">Connection</span></h2>
+                <p class="contact-subtitle">Let's build the future of healthcare technology together.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info glass-card reveal-up">
+                    <div class="info-item magnetic">
+                        <div class="info-icon">📧</div>
+                        <a href="mailto:ranjith040803@gmail.com">ranjith040803@gmail.com</a>
+                    </div>
+                    <div class="info-item magnetic">
+                        <div class="info-icon">💼</div>
+                        <a href="https://www.linkedin.com/in/ranjithraghu" target="_blank">linkedin.com/in/ranjithraghu</a>
+                    </div>
+                    <a href="#" class="btn btn-primary magnetic resume-btn"><span class="btn-text">Download Resume</span></a>
+                </div>
+                
+                <form class="contact-form glass-card reveal-up delay-1">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                        <div class="input-glow"></div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary submit-btn magnetic"><span class="btn-text">Send Transmission</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Ranjith K <span class="accent-text">© 2026</span></div>
+            <p>Designed with precision for the future of healthcare.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
